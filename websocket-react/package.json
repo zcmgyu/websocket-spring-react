@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-scripts": "1.0.17",
+    "react-websocket": "^2.0.0",
+    "sockjs-client": "^1.1.4",
+    "stompjs": "^2.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -13,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080"
+  "proxy": "http://localhost:9292"
 }
