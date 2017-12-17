@@ -30,7 +30,6 @@ public class NotificationService {
                 "/queue/notify",
                 notification
         );
-        return;
     }
 }
 
