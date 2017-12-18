@@ -6,7 +6,6 @@ import LoginFrom from './LoginForm'
 import NotificationForm from './NotificationForm'
 import base64 from 'base-64'
 
-
 class App extends Component {
     constructor(props) {
         super(props)
@@ -34,8 +33,6 @@ class App extends Component {
     }
 
     handleLoginSuccess(json) {
-        console.log('json.access_token')
-        console.log(json.access_token)
         this.setState({ is_authenticated: true, access_token: json.access_token })
     }
 
@@ -61,12 +58,11 @@ class App extends Component {
     }
 
     handleSendNotify() {
-
-        const body = { username: this.state.target }
-        fetch(`/some-action?access_token=${this.state.access_token}`, {
+        // const body = { username: this.state.target }
+        fetch(`/some-action/${this.state.target}?access_token=${this.state.access_token}`, {
             headers: { 'content-type': 'application/json' },
             method: 'POST',
-            body: JSON.stringify(body)
+            // body: JSON.stringify(body)
         })
             .then((result) => (result))
             .catch((error) => { throw new Error(error) });
@@ -77,8 +73,6 @@ class App extends Component {
     }
 
     handleMessage(message) {
-        console.log("Message Debug >>>>>>>>>>>>>>>>")
-        console.log(this.state.messages)
         let { messages } = this.state
         this.setState({ messages: [...messages, message.content] })
     }

@@ -52,7 +52,6 @@ class LoginForm extends Component {
 
     render() {
         const { classes, target, messages, handleMessage, access_token} = this.props
-        console.log(messages)
         const notification = messages.map((message, index) => (
             <SnackbarContent key={index} className={classes.snackbar} message={message} />
         ))
@@ -75,7 +74,7 @@ class LoginForm extends Component {
                 </div>
 
                 <SockJsClient
-                    url={`/ws?access_token=${access_token}`}
+                    url={`http://localhost:9292/ws?access_token=${access_token}`}
                     topics={['/user/queue/notify']}
                     onMessage={(message) => handleMessage(message)} />
 

@@ -7,10 +7,8 @@
     "material-ui": "^1.0.0-beta.23",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-router": "^4.2.0",
     "react-scripts": "1.0.17",
     "react-stomp": "^1.1.0",
-    "react-websocket": "^2.0.0",
     "typeface-roboto": "^0.0.45"
   },
   "scripts": {

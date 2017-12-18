@@ -33,10 +33,10 @@ public class NotificationController {
      * <p>
      * After the action is performed will be notified UserA.
      */
-    @RequestMapping(value = "/some-action", method = RequestMethod.POST)
+    @RequestMapping(value = "/some-action/{target}", method = RequestMethod.POST)
     @ResponseBody
-//    public ResponseEntity<?> someAction(@RequestParam String target) {
-    public ResponseEntity<?> someAction(@RequestBody User target) {
+    public ResponseEntity<?> someAction(@PathVariable String target) {
+//    public ResponseEntity<?> someAction(@RequestBody String target) {
 
         // Do an action here
         // ...
@@ -51,7 +51,7 @@ public class NotificationController {
 //        );
 
         messagingTemplate.convertAndSendToUser(
-                target.getUsername(),
+                target,
                 "/queue/notify",
                 notification
         );
