@@ -12,7 +12,8 @@ Could be useful, for example, if you are trying to implement a real-time user no
 ### Build and run
 
 #### Configurations
-1. Backend
+Backend:
+
 Open the `application.properties` file in *websocket-spring* and set your own database (in my case I'm using MongoDB). You can change User collect to Entity and repository like your project.
 
 #### Prerequisites
@@ -29,6 +30,7 @@ Open the `application.properties` file in *websocket-spring* and set your own da
     ```
     $ mvn spring-boot:run
     ```
+    Or, just open Maven project on IDE like IntelliJ IDEA and run `main method` in Application class
 3. Go on project:s *websocket-react* folder, then type:
     ```
     $ npm install
@@ -39,7 +41,6 @@ Open the `application.properties` file in *websocket-spring* and set your own da
     $ yarn install
     $ yarn start
     ```
-    
 ### Usage
 
 - Launch the application and login into it with one of the following credentials (Username / Password):
