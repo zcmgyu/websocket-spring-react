@@ -15,7 +15,7 @@ class App extends Component {
             password: '',
             target: '',
             // messages: []
-            messages: ['User A liked your post', 'User A commented your post', 'User A followed you'],
+            messages: [],
             access_token: ''
         }
     }
