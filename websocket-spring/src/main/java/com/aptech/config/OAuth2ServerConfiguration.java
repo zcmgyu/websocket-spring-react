@@ -38,7 +38,7 @@ public class OAuth2ServerConfiguration {
             http
                     .authorizeRequests()
                     // https://stackoverflow.com/questions/30887788/json-web-token-jwt-with-spring-based-sockjs-stomp-web-socket/39456274#39456274
-                    .antMatchers("/ws").authenticated();
+                    .anyRequest().authenticated();
 
         }
 
@@ -76,8 +76,8 @@ public class OAuth2ServerConfiguration {
                     .inMemory()
                     .withClient("clientapp")
                     .secret("123456")
-                    .accessTokenValiditySeconds(360)
-                    .refreshTokenValiditySeconds(720)
+                    .accessTokenValiditySeconds(60 * 60 * 24)
+                    .refreshTokenValiditySeconds(60 * 60 * 24 * 2)
                     .scopes("read", "write")
                     .authorizedGrantTypes("password", "refresh_token")
                     .resourceIds(RESOURCE_ID);
