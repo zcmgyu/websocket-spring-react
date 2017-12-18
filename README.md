@@ -17,19 +17,24 @@ Open the `application.properties` file in *websocket-spring* and set your own da
 
 #### From terminal
 1. Start mongodb database
+    ```
     $ mongod
-
+    ```
 2. Go on the project's *websocket-spring* folder, then type:
-
+    ```
     $ mvn spring-boot:run
-
+    ```
 3. Go on project:s *websocket-react* folder, then type:
+    ```
     $ npm install
     $ npm start
+    ```
     or
+    ```
     $ yarn install
     $ yarn start
-
+    ```
+    
 ### Usage
 
 - Launch the application and login into it with one of the following credentials (Username / Password):
