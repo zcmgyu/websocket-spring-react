@@ -50,3 +50,6 @@ Open the `application.properties` file in *websocket-spring* and set your own da
 - Keep a window open on the index and login by user1
 - Open a new private/incognito windows of your web browser and login with *user2*
 - From this web browser specify *target user* and click the button to send a fake action: **target user** will be notified.
+
+### Reference
+Special thanks to **azanelli** for your great [example](https://github.com/netgloo/spring-boot-samples/tree/master/spring-boot-web-socket-user-notifications)
