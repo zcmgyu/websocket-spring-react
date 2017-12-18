@@ -4,7 +4,8 @@ This example will shows how to send notifications, via web socket, to specific l
 
 Could be useful, for example, if you are trying to implement a real-time user notification system with ReactJS.
 
-Demo:
+[*DEMO*:](https://giphy.com/gifs/3o6fIRpgI9LnZ3jrXi/fullscreen)
+
 ![Demo](https://media.giphy.com/media/3ohs7JcKo7aeM2PHdC/giphy.gif)
 
 
