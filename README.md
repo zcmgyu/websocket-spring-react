@@ -1,6 +1,6 @@
 ## Spring Boot Websocket + React: user notifications with web socket ##
 
-This example will shows how to send notifications, via web socket, to specific logged-in users (definded by access_token).
+This example will show how to send notifications, via web socket, to specific logged-in users (definded by access_token).
 
 Could be useful, for example, if you are trying to implement a real-time user notification system with ReactJS.
 
